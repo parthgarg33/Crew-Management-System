@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+   <title>Dashboard</title>
+
+    <!-- CrewManagementSystem references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Indian Railways - CMS</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Train Duty<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Sign On/ Off</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Non Run Duty</a></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Register<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="biodata.html">Bio Data</a></li>
+                        <li><a href="roadlearning.html">Road Learning</a></li>
+                        <li><a href="testandtraining.html">Test and Train</a></li>
+                        <li><a href="lococompetency.html">Loco Competency</a></li>
+                        <li class="divider"></li>
+                        <li><a href="routemaster.html">Route Master</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#">Logout</a></li>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <center>
+                    <h3>Train Duty</h3>
+                    <div class="btn"><a href="signonoff.html">Sign On/ Off</a></div>
+                </center>
+            </div>
+            <hr class="divider hidden-lg hidden-md" />
+        
+
+            <div class="col-md-4">
+                <center>
+                    <h3>Non Run Duty</h3>
+                    <div class="btn"><a href="nonrun.html">Non Run Duty</a></div>
+                </center>
+            </div>
+            <hr class="divider hidden-lg hidden-md" />
+        
+
+
+
+        <div class="col-md-4">
+            <center>
+                <h3>Register</h3>
+                <div class="btn"><a href="biodata.html">Bio Data</a></div>
+                <div class="btn"><a href="roadlearning.html">Road Learning</a></div>
+                <div class="btn"><a href="testtraining.html">Test and Train</a></div>
+                <div class="btn"><a href="lococompetency.html">Loco Competency</a></div>
+                <div class="btn"><a href="routemaster.html">Route Master</a></div>
+            </center>
+            <hr class="divider hidden-lg hidden-md" />
+        </div>
+    </div>
+
+    </div><!-- /.container-fluid -->
+    <!-- Cordova reference, this is added to your app when it's built. -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/platformOverrides.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript"> 
+        app.initialize();
+    </script>
+</body>
+</html>
